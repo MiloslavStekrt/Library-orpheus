@@ -1,0 +1,45 @@
+extends master
+
+block content 
+  div(class="container col-sm-4 bg-secondary py-2 overflow-auto" style="height: 88vh")
+    h3(class="text-center text-light") Person's list
+    button(class="btn btn-dark col my-1") user-name
+    button(class="btn btn-dark col my-1") user-name
+    button(class="btn btn-dark col my-1") user-name
+    button(class="btn btn-dark col my-1") user-name
+    button(class="btn btn-dark col my-1") user-name
+  div(class="container col bg-success py-2")
+    div(class="input-group mb-3")
+      span(class="input-group-text") Person's name: 
+      input(type="text" placeholder="First name" class="form-control text-center")
+      input(type="text" placeholder="Middle name" class="form-control text-center")
+      input(type="text" placeholder="Last name" class="form-control text-center")
+    div(class="input-group mb-3")
+      span(class="input-group-text") look: 
+      input(type="number" placeholder="weight" class="form-control text-center")
+      input(type="number" placeholder="height" class="form-control text-center")
+      span(class="input-group-text") Gender: 
+      select(class="form-select")
+        option(value="true") Man 
+        option(value="false") Woman 
+      span(class="input-group-text") Eyes color: 
+      select(class="form-select")
+        option(value="true") Brown
+        option(value="false") Blue
+        option(value="false") Green
+    div(class="input-group mb-3")
+      span(class="input-group-text") Contacts: 
+      input(type="email" placeholder="Email" class="form-control text-center")
+      input(type="text" placeholder="Mobile" class="form-control text-center")
+    div(class="input-group mb-3")
+      span(class="input-group-text") Temporaly: 
+      input(type="text" placeholder="ability to learn" class="form-control text-center")
+      input(type="text" placeholder="favorite color" class="form-control text-center")
+      input(type="text" placeholder="style" class="form-control text-center")
+    div(class="input-group mb-3")
+      span(class="input-group-text") Note: 
+      input(type="text" placeholder="" class="form-control text-center")
+    div(class="input-group mb-3 justify-content-between")
+      button(class="col-3 btn btn-danger" type="reset") Reset
+      button(class="col-3 btn btn-info" onclick="" disabled) update
+      button(class="col-3 btn btn-primary" type="submit") Add person to DB

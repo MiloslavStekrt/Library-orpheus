@@ -1,0 +1,66 @@
+{
+    "people": {
+        "weight": "Number",
+        "height": "Number",
+        "gender": "Boolean",
+        "name": "String",
+        "eye_color": "String",
+        "ability_learn": "String",
+        "favorite_color": "String",
+        "style": "Array -> Strings",
+        "addiction": "Array - Strings",
+        "pets": "Array - ObjectId(pets)",
+        "mobile": "Array - {000x000x000}",
+        "logs": "Array - ObjectId(event)",
+        "email": "String{x@x.x}",
+        "place": [
+            {
+                "when": "String",
+                "where": "String"
+            }
+        ],
+        "study": [
+            {
+                "note": "String",
+                "school": "ObjectId(school)"
+            }
+        ],
+        "skills": [
+            {
+                "level": "String",
+                "name": "String",
+                "length": "float"
+            }
+        ],
+        "friends": "Array - ObjectId(people)",
+        "born": "{when: Date, where: String}",
+        "environment": [
+            {
+                "from": "Date",
+                "to": "Date",
+                "effect": "String",
+                "name": "String"
+            }
+        ]
+    },
+    "event": {
+        "When": "Date",
+        "What": "Strings",
+        "PersonList": "String"
+    },
+    "school": {
+        "name": "String",
+        "Where": "String",
+        "websites": "String"
+    },
+    "pets": {
+        "owner": "ObjectId(user)",
+        "name": "String",
+        "color": "String",
+        "height": "Number",
+        "weight": "Number",
+        "pros": "String",
+        "minuses": "String",
+        "gender": "Boolean"
+    }
+}

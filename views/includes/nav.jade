@@ -1,0 +1,11 @@
+header(class="navbar navbar-dark bg-dark")
+    div(style="background-color: gray", class="rounded")
+        h1(class="align-middle")
+            | &nbsp 
+            include ../svg/braces.svg
+            |  Leviathan dev. &nbsp
+    nav()
+        each navlink in navlinks
+            a(href=navlink.loc, class=`mx-1 btn btn-`+navlink.color)= navlink.text
+        button(onclick='window.location.href=`#left`', class="btn btn-secondary mx-2") 
+            include ../svg/left.svg
